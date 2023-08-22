@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Project Management Tool</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Project Management Tool</h1>
+    <form id="task-form">
+      <input type="text" id="task-input" placeholder="Enter task...">
+      <select id="priority-select">
+        <option value="low">Low</option>
+        <option value="medium">Medium</option>
+        <option value="high">High</option>
+      </select>
+      <button type="submit">Add Task</button>
+    </form>
+    <ul id="task-list"></ul>
+    <div id="filter-container">
+      <label for="filter-select">Filter: </label>
+      <select id="filter-select">
+        <option value="all">All</option>
+        <option value="completed">Completed</option>
+        <option value="incomplete">Incomplete</option>
+      </select>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
